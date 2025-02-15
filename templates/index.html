@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Upload Your Image</h1>
+
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+        <input id="file-upload" type="file" name="image" accept="image/*" required>
+        <label for="file-upload" class="upload-btn">Upload Image</label>
+    </form>
+    <footer class="footer">
+        &copy; Bektas - 2025
+    </footer>
+</body>
+</html>

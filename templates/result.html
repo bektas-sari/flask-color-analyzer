@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Color Analysis of Your Image</h1>
+    
+    <h3>Top 5 Colors:</h3>
+    <div class="color-container">
+        {% for color, hex, percent in top_5_combined %}
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div class="color-box" style="background-color: {{ hex }};" onclick="copyToClipboard('{{ hex }}')">
+                    <span class="percent-label">%{{ percent }}</span>
+                </div>
+                <div class="hex-code">{{ hex }}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h3>Other Colors:</h3>
+    <div class="color-container">
+        {% for color, hex, percent in other_combined %}
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div class="small-box" style="background-color: {{ hex }};" onclick="copyToClipboard('{{ hex }}')">
+                    <span class="percent-label">%{{ percent }}</span>
+                </div>
+                <div class="small-hex">{{ hex }}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <button onclick="window.location.href='/'">Upload a New Image</button>
+    <footer class="footer">
+        &copy; Bektas - 2025
+    </footer>
+    
+</body>
+</html>
