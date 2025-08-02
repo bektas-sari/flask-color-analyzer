@@ -67,8 +67,11 @@ Contributions are welcome! Please follow these steps:
 ## License
 This project is licensed under the MIT License.
 
-## Contact
-For any questions or suggestions, feel free to reach out:
-- **Email**: bektas.sari@gmail.com
-- **GitHub**: [bektas-sari](https://github.com/bektas-sari)
+## 👤 Developer
+**Bektas Sari**  
+Email: bektas.sari@gmail.com  <br>
+GitHub: https://github.com/bektas-sari <br>
+LinkedIn: www.linkedin.com/in/bektas-sari <br>
+Researchgate: https://www.researchgate.net/profile/Bektas-Sari-3 <br>
+Academia: https://independent.academia.edu/bektassari <br>
 
