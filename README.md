@@ -1,7 +1,8 @@
 # Color Analyzer (Flask & Scikit-learn & KMeans) 
 
 ## Overview
-Color Analyzer is a web application that analyzes an uploaded image and extracts its dominant colors. It provides a visual representation of the most prominent colors in the image along with their HEX codes and percentage usage. This tool is useful for designers, developers, and artists who need to generate color palettes from images effortlessly.
+Color Analyzer is a web application that analyzes an uploaded image and extracts its dominant colors. 
+It provides a visual representation of the most prominent colors in the image along with their HEX codes and percentage usage. This tool is useful for designers, developers, and artists who need to generate color palettes from images effortlessly.
 
 ## Features
 - **Automatic Color Extraction**: Uses KMeans clustering to detect dominant colors.
